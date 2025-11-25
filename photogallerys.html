@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+   
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Mulish';
+            background: #f0f0f0;
+        }
+    .navbar {
+        display: flex;
+        width: 1440px;
+        height: 80px;
+        opacity: 1;
+        padding-top: 0px;
+        padding-right: 112px;
+        padding-bottom: -12px;
+        padding-left: 112px;
+        background-color: white;
+        gap: 100px;
+        align-items: center;
+
+    }
+
+    .navbar .links a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+    .texto1{
+        color: #bebebe;
+        font-family: 'Mulish';
+        font-weight: bold;
+        
+    }
+
+   
+    .galeria-container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0px;
+    }
+
+    .galeria-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 27px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        transition: 0.2s;
+        width: 392px;
+     
+    }
+
+    .card:hover {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.20);
+    }
+
+    .card img {
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+        margin: 0 0 10px;
+        color: #333;
+    }
+
+    .tag {
+        font-size: 12px;
+        background: #e8e8e8;
+        padding: 5px 10px;
+        border-radius: 6px;
+        display: inline-block;
+    }
+
+    footer {
+        text-align: center;
+        margin: -2px 0;
+        color: #777;
+    }
+    .nsei{
+        width: 1549px;
+        height: 26px;
+        top: 1141px;
+        gap: 10px;
+        opacity: 1;
+        padding: 14px;
+        background-color: white;
+        color: #323238;
+        
+        align-items: center;
+
+    }
+</style>
+
+</head>
+<body>
+<div class="navbar">
+    <div class="logo"><img src="camera.png"></div>
+    <div class="links">
+        <div class="texto1">Home</div>
+        </div>
+        <div class="links">
+        <a href="#">Galeria</a>
+    </div>
+    <div class="container">
+       <img src="AutocompleteField.png">
+    </div>
+    <div class="container">
+       <img src="Jojo.png">
+    </div>
+</div>
+
+
+<div class="galeria-container">
+    <h2 class="galeria-title">Galeria</h2>
+
+    <div class="galeria">
+        <div class="card">
+            <img src="unsplash_VS-WRkyuax4@3x.png" alt="">
+            <div class="card-content">
+                <h3>Workspace elétrica</h3>
+                <span class="tag">TAG</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="unsplash_yQnyP1g5zl4.png" alt="">
+            <div class="card-content">
+                <h3>Dark and red</h3>
+                <span class="tag">TAG</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="unsplash_LAY19dUD_ro.png" alt="">
+            <div class="card-content">
+                <h3>Organização e grids</h3>
+                <span class="tag">TAG</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="unsplash_9856jObeogs.png" alt="">
+            <div class="card-content">
+                <h3>Colméia</h3>
+                <span class="tag">TAG</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="unsplash_iwJscb2Ezsk.png" alt="">
+            <div class="card-content">
+                <h3>Setup de escritor</h3>
+                <span class="tag">TAG</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="unsplash_fwfobhsF1Kw.png" alt="">
+            <div class="card-content">
+                <h3>Ergonomia e cores</h3>
+                <span class="tag">TAG</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="unsplash_gvptKmonylk.png" alt="">
+            <div class="card-content">
+                <h3>Show de luzes</h3>
+                <span class="tag">TAG</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="unsplash_d1Wj9qU5C-o.png" alt="">
+            <div class="card-content">
+                <h3>Deep Purple</h3>
+                <span class="tag">TAG</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="unsplash_IMYU7kmPLwI.png" alt="">
+            <div class="card-content">
+                <h3>Multi-screen</h3>
+                <span class="tag">TAG</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="nsei">
+    © 2025 · Web Gallery
+</footer>
+
+</body>
+</html>
+
+
+
+</body>
+</html>
